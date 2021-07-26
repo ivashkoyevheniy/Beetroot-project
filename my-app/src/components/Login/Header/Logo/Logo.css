@@ -1,0 +1,33 @@
+.login__logo-container {
+    height: 100%;
+    width: 23%;
+    padding-left: 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login__logo-title {
+    color: #fff;
+    font-size: 40px;
+}
+
+.login__logo-image {
+    height: 65px;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .login__logo-image {
+      animation: logo-spin infinite 5s linear;
+    }
+  }
+  
+  @keyframes logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
