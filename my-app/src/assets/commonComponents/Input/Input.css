@@ -1,20 +1,22 @@
 .login__input-container {
     width: 100%;
+    margin-top: 30px;
 }
 
 .login__input-field {
     width: 100%;
     height: 56px;
-    padding-left: 30px;
+    padding-left: 40px;
     outline: none;
     border: none;
     border-bottom: 1px solid #d4d9e3;
     color: #0e1a35;
-    font-weight: 300;
+    font: 300 24px "Roboto", sans-serif;
 }
 
 .login__input-field::placeholder {
     color: #8492af;
+    font: 300 24px "Roboto", sans-serif;
 }
 
 .login__input-field:focus {

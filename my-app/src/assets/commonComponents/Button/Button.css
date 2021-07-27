@@ -1,0 +1,52 @@
+.btn {
+  width: 380px;
+  height: 70px;
+  border-radius: 35px;
+  font: 700 24px "Roboto", sans-serif;
+  background-color: #5584ff;
+}
+
+@media screen and (max-width: 719px) {
+  .btn {
+    width: 280px;
+    height: 50px;
+    border-radius: 25px;
+    font: 700 20px "Roboto", sans-serif;
+  }
+}
+
+.login__button-container {
+  padding: 8% 0;
+  position: relative;
+}
+
+.login__button-container img {
+  top: 45%;
+  left: 80%;
+  height: 20px;
+  animation: moveToRight 1.2s ease infinite;
+}
+
+@keyframes moveToRight {
+  0% {
+      opacity: 0;
+      transform: translateX(0px);
+  }
+
+  50% {
+      opacity: 1;
+  }
+
+  100% {
+      opacity: 0;
+      transform: translateX(10px);
+  }
+}
+
+.login__button-icon {
+  font-size: 12px;
+  position: absolute;
+  left: 270px;
+  right: 0px;
+  top: 30px;
+}
