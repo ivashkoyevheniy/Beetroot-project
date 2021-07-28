@@ -2,7 +2,7 @@
 /* eslint-disable react/no-unused-state */
 import * as React from "react";
 import Paper from "@material-ui/core/Paper";
-import { ViewState, EditingState, IntegratedEditing } from "@devexpress/dx-react-scheduler";
+import { ViewState, EditingState } from "@devexpress/dx-react-scheduler";
 import {
   Scheduler,
   Toolbar,
@@ -288,7 +288,7 @@ class CalendarComp extends React.PureComponent {
   constructor(props) {
     super(props);
     this.state = {
-      data: appointments,
+      data: [],
       currentDate: getCurrentDate(),
       confirmationVisible: false,
       editingFormVisible: false,
@@ -345,10 +345,11 @@ class CalendarComp extends React.PureComponent {
   }
 
   componentDidMount() {
-    let data = localStorage.getItem('data');
+    let data = JSON.parse(localStorage.getItem('data'));
     data && this.setState({data});
-    data = localStorage.setItem('data', JSON.stringify(appointments))
+    data = localStorage.setItem('data', JSON.stringify(data))
   }
+
   componentDidUpdate() {
     this.appointmentForm.update();
   }
@@ -442,7 +443,6 @@ class CalendarComp extends React.PureComponent {
             onEditingAppointmentChange={this.onEditingAppointmentChange}
             onAddedAppointmentChange={this.onAddedAppointmentChange}
           />
-          <IntegratedEditing />
           <WeekView startDayHour={startDayHour} endDayHour={endDayHour} />
           <WeekView
             name="work-week"
