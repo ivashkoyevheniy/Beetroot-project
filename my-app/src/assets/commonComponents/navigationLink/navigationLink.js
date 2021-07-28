@@ -1,6 +1,6 @@
 import './navigationLink.css';
 
-export default function NavigationLink(props) {
+export const NavigationLink = (props) => {
     const { linkClass, link, title } = props;
     return (
         <div className='login__header-button-container'>
