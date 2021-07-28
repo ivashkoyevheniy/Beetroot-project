@@ -345,6 +345,11 @@ class CalendarComp extends React.PureComponent {
     });
   }
 
+  componentDidMount() {
+    let data = localStorage.getItem('data');
+    data && this.setState({data});
+    data = localStorage.setItem('data', JSON.stringify(appointments))
+  }
   componentDidUpdate() {
     this.appointmentForm.update();
   }
