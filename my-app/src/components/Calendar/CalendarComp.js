@@ -41,7 +41,6 @@ import Close from "@material-ui/icons/Close";
 import CalendarToday from "@material-ui/icons/CalendarToday";
 import Create from "@material-ui/icons/Create";
 
-import { appointments } from "../../helpers/dataCalendar";
 import { getCurrentDate } from "../../utils";
 import './style.css';
 
@@ -370,6 +369,7 @@ class CalendarComp extends React.PureComponent {
   }
 
   setDeletedAppointmentId(id) {
+    localStorage.setItem('data', JSON.stringify(this.state.data.filter(item => item.id !== id && item)))
     this.setState({ deletedAppointmentId: id });
   }
 

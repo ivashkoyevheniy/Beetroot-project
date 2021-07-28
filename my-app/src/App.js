@@ -4,9 +4,9 @@ import { Calendar, Login, Register } from './pages/';
 function App() {
   return (
     <div className="App">
-      {/* <Login/> */}
+      <Login/>
         {/* <Register /> */}
-        <Calendar/>
+        {/* <Calendar/> */}
     </div>
   );
 }
