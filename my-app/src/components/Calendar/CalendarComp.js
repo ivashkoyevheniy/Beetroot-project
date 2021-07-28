@@ -16,8 +16,7 @@ import {
   EditRecurrenceMenu,
   AllDayPanel,
   DateNavigator,
-  DayView,
-  ConfirmationDialog,
+  DayView
 } from "@devexpress/dx-react-scheduler-material-ui";
 import { connectProps } from "@devexpress/dx-react-core";
 import {
@@ -404,6 +403,7 @@ class CalendarComp extends React.PureComponent {
         const startingAddedId =
           data.length > 0 ? data[data.length - 1].id + 1 : 0;
         data = [...data, { id: startingAddedId, ...added }];
+        localStorage.setItem('data', JSON.stringify(data))
       }
       if (changed) {
         data = data.map((appointment) =>
@@ -411,6 +411,7 @@ class CalendarComp extends React.PureComponent {
             ? { ...appointment, ...changed[appointment.id] }
             : appointment
         );
+        localStorage.setItem('data', JSON.stringify(data))
       }
       if (deleted !== undefined) {
         this.setDeletedAppointmentId(deleted);
@@ -454,7 +455,6 @@ class CalendarComp extends React.PureComponent {
           <DayView />
           <AllDayPanel />
           <EditRecurrenceMenu />
-          <ConfirmationDialog />
           <Appointments />
           <AppointmentTooltip showOpenButton showCloseButton showDeleteButton />
           <Toolbar/>
