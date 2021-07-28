@@ -1,12 +1,12 @@
 import './App.css';
-import { Login } from './pages/';
-import { Register } from './pages/';
+import { Calendar, Login, Register } from './pages/';
 
 function App() {
   return (
     <div className="App">
-      <Login/>
+      {/* <Login/> */}
         {/* <Register /> */}
+        <Calendar/>
     </div>
   );
 }
