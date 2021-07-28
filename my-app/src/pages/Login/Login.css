@@ -1,7 +1,7 @@
 .login {
     width: 100%;
     height: 100%;
-    background-image: url(../../img/login-background.jpg);
+    background-image: url(../../assets/img/login-background.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -16,18 +16,23 @@
     width: 63.5%;
     max-width: 1220px;
     height: 90%;
+    background-color: #fff;
+}
+
+.login__form {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-between;
-    background-color: #fff;
+    align-items: center;
 }
 
 .login__user-icon {
     position: absolute;
     color: #5384ff;
     left: 0;
-    top: 8px;
+    top: 38px;
+    width: 27px;
+    height: 36px;
 }
 
 .login__title {
@@ -36,6 +41,7 @@
     font-size: 48px;
     font-weight: 300;
     line-height: 48px;
+    text-align: center;
 }
 
 .login__title--blue {
@@ -48,3 +54,9 @@
     display: flex;
     flex-direction: column;
 }
+
+@media screen and (max-width: 1024px) {
+    .login {
+      background: none;
+    }
+  }
