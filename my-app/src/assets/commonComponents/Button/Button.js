@@ -3,7 +3,7 @@ import React from "react";
 import arrowRight from './../../img/right-arrow.svg';
 import { iconCreator } from '../../../utils';
 
-export default function Button({title}) {
+export const Button = ({title}) => {
 
     return (
         <div className='login__button-container'>

@@ -2,7 +2,7 @@ import './Logo.css';
 import logo from './../../assets/img/logo.png';
 
 
-export default function Logo() {
+export const Logo = () => {
     return (
         <div className='login__logo-container'>
             <img
