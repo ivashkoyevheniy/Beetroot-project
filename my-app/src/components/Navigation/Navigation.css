@@ -1,0 +1,101 @@
+.login-auth-nav {
+  height: 100%;
+  width: 38%;
+  display: flex;
+}
+
+.nav-link {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.nav-link:focus {
+  color: #fff;
+}
+.nav-link:hover {
+  color: #5584ff;
+}
+.login-nav-link--active {
+  padding-top: 10px;
+  border-bottom: 10px solid #5584ff;
+}
+
+.sidebar-nav-link {
+  height: 7.5%;
+  min-height: 100px;
+  padding-left: 28%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.sidebar-nav-link--active {
+  padding-left: calc(28% + -10px);
+  border-left: 10px solid #5584ff;
+  background-color: #122143;
+}
+
+.icon {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  color: #5384ff;
+  left: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.icon-container {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  top: 50%;
+}
+
+.icon-container--nav {
+  left: 15%;
+  top: 36%;
+}
+
+.icon-container--input {
+  position: relative;
+  top: 38px;
+}
+
+.icon-container--header {
+  position: relative;
+  top: 0;
+}
+
+.icon-container--small {
+  width: 16px;
+}
+
+.icon-container--button {
+  right: 15%;
+  top: 42%;
+}
+
+@media screen and (max-width: 480px) {
+  .login-auth-nav {
+    width: 100%;
+    height: 50%;
+  }
+
+  .icon-container {
+    top: 40%;
+  }
+
+  .icon-container--button {
+      height: 22px;
+  }
+}

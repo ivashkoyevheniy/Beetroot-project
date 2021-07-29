@@ -1,16 +1,17 @@
 import './Logo.css';
 import logo from './../../assets/img/logo.png';
 
-
 export const Logo = () => {
     return (
-        <div className='login__logo-container'>
+        <a href='#' className='logo-container'>
+            <div className='logo-image-container'>
             <img
                 alt='logo'
-                className='login__logo-image'
+                className='logo-image'
                 src={logo}>
             </img>
-            <span className='login__logo-title'>Mercury</span>
-        </div>
+            </div>
+            <span className='logo-title'>Mercury</span>
+        </a>
     );
 }

@@ -1,73 +1,70 @@
 .login {
-    width: 100%;
-    height: 100%;
-    background-image: url(../../assets/img/login-background.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
-    font-weight: 500;
-    overflow: auto;
+  width: 100%;
+  height: 100%;
+  background-image: url(../../assets/img/login-background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
 }
 
-::-webkit-scrollbar{
-    display: none;
+::-webkit-scrollbar {
+  display: none;
 }
 
-.login__container {
-    width: 63.5%;
-    max-width: 1220px;
-    height: 90%;
-    background-color: #fff;
-    overflow: auto;
+.login-container {
+  width: 63.5%;
+  max-width: 1220px;
+  height: 90%;
+  background-color: #fff;
+  overflow: auto;
 }
 
-.login__form {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.login__user-icon {
-    position: absolute;
-    color: #5384ff;
-    left: 0;
-    top: 38px;
-    width: 27px;
-    height: 36px;
+.login-title {
+  padding: 5%;
+  color: #8492af;
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 48px;
+  text-align: center;
 }
 
-.login__title {
-    padding: 5% 0 8%;
-    color: #8492af;
-    font-size: 48px;
-    font-weight: 300;
-    line-height: 48px;
-    text-align: center;
+.login-title--blue {
+  color: #5384ff;
 }
 
-.login__title--blue {
-    color: #5384ff;
+.login-input {
+  width: 47.3%;
+  position: relative;
+  display: flex;
 }
 
-.login__input {
-    width: 47.3%;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-}
-
-@media screen and (max-width: 1024px) {
-    .login {
-        height: auto;
-        background: none;
+@media screen and (max-width: 480px) {
+    .login-input {
+        width: 80%;
     }
-
-    .login__container{
-        width: 100%;
+    .login-user-icon {
+        top: 25px;
     }
+}
+
+@media screen and (max-width: 1023px) {
+  .login {
+    height: auto;
+    background: none;
   }
+  .login-container {
+    width: 100%;
+  }
+}
+

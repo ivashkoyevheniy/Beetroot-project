@@ -1,44 +1,16 @@
-.login__header {
+.header {
     height: 147px;
     min-height: 95px;
     width: 100%;
     background-color: #0e1a35;
     display: flex;
     justify-content: space-between;
-}
-
-.login_auth-nav {
-    height: 100%;
-    width: 38%;
-    display: flex;
-}
-
-.login__nav-link {
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
-    color: #fff;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    cursor: pointer;
 }
 
-.login__nav-link:hover {
-    color: #5584ff;
-}
-.login__nav-link--active {
-    padding-top: 10px;
-    border-bottom: 10px solid #5584ff;
-}
-
-@media screen and (max-width: 719px) {
-    .login__header {
+@media screen and (max-width: 480px) {
+    .header {
         flex-direction: column;
         align-items: center;
-    }
-    .login_auth-nav {
-        width: 100%;
-        height: 50%;
     }
 }
