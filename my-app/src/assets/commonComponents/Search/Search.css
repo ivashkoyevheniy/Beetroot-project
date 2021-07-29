@@ -1,0 +1,40 @@
+.search {
+  width: 300px;
+  cursor: pointer;
+  display: flex;
+  position: relative;
+}
+
+.search-field {
+  height: 36px;
+  width: 100%;
+  display: block;
+  position: relative;
+  border-radius: 18px;
+  outline: none;
+  padding: 2px 35px 2px 10px;
+}
+
+.search-link {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  border: none;
+  top: 10%;
+  right: 10px;
+  background: none;
+}
+
+.search-icon-container {
+    height: 100%;
+    position: relative;
+}
+.search-icon-container .search-icon {
+    transition: all .4s ease;
+}
+
+@media screen and (max-width: 1024px) {
+  .search-field {
+    width: 200px;
+  }
+}

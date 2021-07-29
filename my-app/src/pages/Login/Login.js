@@ -6,10 +6,10 @@ import { Form } from "../../assets/commonComponents";
 export const Login = () => {
   return (
     <div className="login">
-      <div className="login__container">
-        <Header/>
-        <div className="login__title">
-          Welcome<span className="login__title--blue"> back!</span>
+      <div className="login-container">
+        <Header />
+        <div className="login-title">
+          Welcome<span className="login-title--blue"> back!</span>
         </div>
         <Form toggler={true}/>
       </div>

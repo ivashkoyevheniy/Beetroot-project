@@ -1,5 +1,19 @@
 .App {
   font-family: 'Roboto', sans-serif;
   height: 100%;
+  display: flex;
 }
 
+.hidden {
+  display: hidden;
+}
+
+.delete {
+  display: none;
+}
+
+@media screen and (max-width: 1023px) {
+  .App {
+    display: block;
+  }
+}

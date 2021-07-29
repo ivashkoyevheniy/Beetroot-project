@@ -3,13 +3,12 @@ import React from "react";
 import arrowRight from './../../img/right-arrow.svg';
 import { iconCreator } from '../../../utils';
 
-export const Button = ({title}) => {
-
+export const Button = ( props ) => {
+    const { btnClass, title, toggler } = props;
     return (
-        <div className='login__button-container'>
-            <button type="button" className='btn btn-primary'>{title}
-            </button>
-            {iconCreator(arrowRight)}
+        <div className='button-container'>
+            <button type="sumbit" className={btnClass}>{title}</button>
+            {toggler && <div className='icon-container icon-container--button'>{iconCreator(arrowRight)}</div>}
         </div>
     );
 }
