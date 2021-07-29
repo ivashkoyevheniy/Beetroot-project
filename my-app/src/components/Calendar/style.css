@@ -1,3 +1,50 @@
 .MuiFormLabel-root.MuiInputLabel-root.MuiInputLabel-formControl.MuiInputLabel-animated.MuiInputLabel-outlined{
     transform: translate(14px, 0px) scale(0.75);
 }
+
+.MuiSelect-root.memo-root-31.MuiSelect-select.MuiSelect-selectMenu.MuiInputBase-input.MuiOutlinedInput-input.memo-input-29{
+    position: relative;
+    border: 1px solid grey;
+    border-radius: 20px;
+    min-width: 125px;
+    padding-left: 50px;
+    text-transform: lowercase;
+}
+
+.MuiSelect-root.memo-root-31.MuiSelect-select.MuiSelect-selectMenu.MuiInputBase-input.MuiOutlinedInput-input.memo-input-29::first-letter{
+    text-transform: uppercase;
+}
+
+.MuiSelect-root.memo-root-31.MuiSelect-select.MuiSelect-selectMenu.MuiInputBase-input.MuiOutlinedInput-input.memo-input-29::before{
+    display: block;
+    position: absolute;
+    content: 'View:';
+    transform: translate(50%);
+    left: -5px;
+    color: lightgray;
+    text-transform: lowercase;
+}
+
+.PrivateNotchedOutline-root-35.MuiOutlinedInput-notchedOutline{
+    border: none;
+}
+
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline{
+    border: none;
+}
+
+.RootBase-root-24{
+    display: flex;
+}
+
+.MuiButtonBase-root.MuiButton-root.MuiButton-text.OpenButton-textButton-26{
+    order: 2;
+}
+
+.MuiButtonBase-root.MuiIconButton-root.NavigationButton-button-25{
+    order: 3;
+}
+
+.RootBase-root-24 > .MuiButtonBase-root.MuiIconButton-root.NavigationButton-button-25:first-of-type{
+    order: 1;
+}
