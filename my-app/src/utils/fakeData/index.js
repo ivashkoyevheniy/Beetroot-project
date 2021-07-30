@@ -75,3 +75,85 @@ export const dataInCompleted = [
         inTime:false
     }
 ];
+
+export const homePageTasks = [
+    {
+        name:'N',
+        title:'New website for Sumy.co',
+        description:'5 days delays',
+        inTime:false
+    }, {
+        name:'F',
+        title:'Free business PSD Template',
+        description:'2 days delays',
+        inTime:false
+    },{
+        name:'N',
+        title:'New logo for JCD.pl',
+        description:'5 days left',
+        inTime:true
+    },{
+        name:'F',
+        title:'Free Icons Set vol.3',
+        description:'5 days left',
+        inTime:true
+    },
+];
+
+export const homePageMessages = [
+    {
+        avatar:'img',
+        name:"Nina Jones",
+        time:"5 minutes ago",
+        comment:"Hey You! It's me again :-) I attached a new (...)"
+    },
+    {
+        avatar:'img',
+        name:"Nina Jones",
+        time:"About 20 hours ago",
+        comment:"Hey! I attached some new PSD files for (...)"
+    },
+    {
+        avatar:'img',
+        name:"James Smith",
+        time:"2 days ago",
+        comment:"Good morning, you are fired!"
+    },
+    {
+        avatar:'img',
+        name:"Nina Jones",
+        time:"About 2 weeks ago",
+        comment:"Hello! Could You bring me coffee please?"
+    },
+];
+
+export const homePageActivity = [
+    {
+        avatar:"img",
+        name:"Nina Jones",
+        activity:"added a new project",
+        project:"Free UI Kit",
+        time:"Just now"
+    },
+    {
+        avatar:"img",
+        name:"James Smith",
+        activity:"commented project",
+        project:"Free PSD Template",
+        time:"40 minutes ago"
+    },
+    {
+        avatar:"img",
+        name:"Alex Clooney",
+        activity:"completed task",
+        project:"Symu Website",
+        time:"1 hour ago"
+    },
+    {
+        avatar:"img",
+        name:"Alexandra Spears",
+        activity:"added a new project",
+        project:"Free PSD (...)",
+        time:"3 hours ago"
+    },
+]

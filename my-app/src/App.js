@@ -9,12 +9,12 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Switch>
-          {/* <Route path="/home"> 
+          <Route path="/home"> 
              <Home /> 
-          </Route> */}
-          <Route path="/workflow">
-            <Workflow/>
           </Route>
+          {/* <Route path="/workflow">
+            <Workflow/>
+          </Route> */}
         </Switch>
       </BrowserRouter>
 

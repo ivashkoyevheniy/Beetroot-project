@@ -1,6 +1,5 @@
 import React from "react";
-import { Sidebar } from "../../components";
-import { AppHeader } from "../../components";
+import { AppHeader, HomeTable, Sidebar } from "../../components";
 import './Home.css';
 
 export const Home = () => { 
@@ -10,6 +9,7 @@ export const Home = () => {
         <div className='app-right-container'>
         <AppHeader />
         <main className='main'>
+          <HomeTable/>
         </main>
         </div>
         
