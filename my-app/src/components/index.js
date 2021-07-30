@@ -4,3 +4,4 @@ export * from './Calendar/CalendarComp';
 export * from './Sidebar';
 export * from './Navigation';
 export * from './AppHeader';
+export * from './WorkflowTable';

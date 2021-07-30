@@ -1,24 +1,24 @@
 import React from 'react';
 import './App.css';
-import { Calendar, Login, Register } from './pages/';
-import { Login } from './pages/';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import { Register } from './pages/';
-import { Home } from './pages/Home/Index';
+import { Login, Register, Workflow, Home } from './pages/';
 
 function App() {
 
  return (
     <div className="App">
-      {/* <BrowserRouter>
+      <BrowserRouter>
         <Switch>
-          <Route path="/home"> */}
-            {/* <Home /> */}
-          {/* </Route>
+          {/* <Route path="/home"> 
+             <Home /> 
+          </Route> */}
+          <Route path="/workflow">
+            <Workflow/>
+          </Route>
         </Switch>
-      </BrowserRouter> */}
+      </BrowserRouter>
 
-      <Login/>
+      {/* <Login/> */}
 
         {/* <Calendar/> */}
       {/* <Register /> */}
