@@ -1,5 +1,5 @@
 import { TableBody, TableTitle } from "../../assets/commonComponents";
-import { homePageTasks } from "../../utils/fakeData";
+import { homePageMessages, homePageTasks } from "../../utils/fakeData";
 
 export const HomeTable = () => {
   return (
@@ -10,7 +10,7 @@ export const HomeTable = () => {
       </div>
       <div className="home-table-body">
         <TableTitle name="Messages" />
-        <TableBody data={homePageTasks} />
+        <TableBody data={homePageMessages} />
       </div>
     </div>
   );
