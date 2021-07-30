@@ -1,0 +1,42 @@
+.workflow-table{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.table{
+
+}
+
+.table-title{
+
+}
+
+.table-list{
+    margin-right: 25px;
+}
+
+.table-quantity{
+
+}
+
+.table-item{
+
+}
+
+.item-name{
+
+}
+
+.item-title{
+
+}
+
+.item-description{
+
+}

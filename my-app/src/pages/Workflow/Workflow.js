@@ -1,15 +1,14 @@
 import React from "react";
-import { Sidebar } from "../../components";
-import { AppHeader } from "../../components";
-import './Home.css';
+import { AppHeader, Sidebar, WorkflowTable } from "../../components";
 
-export const Home = () => { 
+export const Workflow = () => { 
   return (
     <div className="app-container">
         <Sidebar />
         <div className='app-right-container'>
         <AppHeader />
         <main className='main'>
+          <WorkflowTable/>
         </main>
         </div>
         

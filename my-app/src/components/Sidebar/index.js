@@ -1,5 +1,5 @@
 import { Navigation } from '..';
-import { Logo } from '../Logo/Logo';
+import { Logo } from '../Logo';
 import './Sidebar.css';
 
 export const Sidebar = () => {
