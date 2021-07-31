@@ -1,25 +1,28 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import { Login, Register, Workflow, Home } from './pages/';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { Login, Register, Workflow, Home, Calendar} from './pages/';
 
 function App() {
 
  return (
     <div className="App">
-      <BrowserRouter>
+      <Router>
         <Switch>
-          <Route path="/home"> 
-             <Home /> 
+          <Route path="/home">
+             <Home />
           </Route>
-          {/* <Route path="/workflow">
+          <Route path="/workflow">
             <Workflow/>
-          </Route> */}
+          </Route>
+          <Route path="/calendar">
+            <Calendar/>
+          </Route>
         </Switch>
-      </BrowserRouter>
+      </Router>
 
       {/* <Login/> */}
-
+      {/* <Workflow/> */}
         {/* <Calendar/> */}
       {/* <Register /> */}
       {/* <Home /> */}

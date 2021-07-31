@@ -1,5 +1,5 @@
 .App {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   height: 100%;
   display: flex;
 }
@@ -12,8 +12,76 @@
   display: none;
 }
 
+.app-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  background-color: #f6f7fa;
+}
+
+.app-right-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-table {
+  height: 100%;
+  margin: 3%;
+  overflow: auto;
+}
+
+.Toolbar-toolbar-23 {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 10;
+}
+
+.Cell-cell-70 {
+  border-top: 1px solid rgba(224, 224, 224, 1);
+}
+
 @media screen and (max-width: 1023px) {
   .App {
     display: block;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main-table {
+    margin: 0;
+  }
+  .makeStyles-cell-75 .Label-label-80 {
+    padding-right: 0;
+  }
+  .MuiTable-root.makeStyles-timeScaleContainer-73 {
+    width: 100%;
+  }
+  .TitleCell-container-55 .TitleCell-content-56 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .TitleCell-title-57.MuiTypography-body1 {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+  .makeStyles-flexRow-49 {
+    min-width: 60px;
+  }
+  .makeStyles-ordinaryHeaderBorder-46 .makeStyles-dayScaleEmptyCell-54 {
+    width: 100%;
+    min-width: 60px;
+    justify-content: center;
+  }
+  /* .MuiTableRow-root .MuiTableCell-root {
+    width: 10%;
+  } */
+
+  .MuiTableRow-root:last-child .Cell-cell-70 {
+    min-width: 50.25px;
   }
 }

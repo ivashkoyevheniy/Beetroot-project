@@ -12,12 +12,11 @@
 }
 
 .btn--small {
-  width: 178px;
-  height: 48px;
-  border-radius: 35px;
-  font: 700 24px "Roboto", sans-serif;
+  width: 180px;
+  height: 50px;
+  border-radius: 25px;
+  font: 700 18px "Roboto", sans-serif;
   background-color: #5584ff;
-  font-size: 18px;
 }
 
 .button-container {
@@ -43,11 +42,25 @@
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .btn--small {
+    width: 140px;
+    font: 700 16px "Roboto", sans-serif;
+    background-color: #5584ff;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .btn {
     width: 280px;
     height: 50px;
     border-radius: 25px;
     font: 700 20px "Roboto", sans-serif;
+  }
+  .btn--small {
+    width: 140px;
+    height: 40px;
+    font: 700 16px "Roboto", sans-serif;
+    border-radius: 20px;
   }
 }

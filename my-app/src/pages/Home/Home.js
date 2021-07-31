@@ -8,7 +8,7 @@ export const Home = () => {
         <Sidebar />
         <div className='app-right-container'>
         <AppHeader />
-        <main className='main'>
+        <main className='main-table'>
           <HomeTable/>
         </main>
         </div>

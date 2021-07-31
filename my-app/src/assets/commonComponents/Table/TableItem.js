@@ -1,11 +1,24 @@
-export const TableItem = ({ data }) => {
-  const { name, title, description } = data;
+import moreIcon from "../../img/more-icon.svg";
+import { iconCreator } from "../../../utils";
+import { TableItemDescription } from ".";
 
+export const TableItem = ({ data }) => {
+  const { name, title, description, isCompleted, inTime } = data;
+  console.log(title);
   return (
     <li className="table-item">
-      <p className="item-name">{name}</p>
-      <h4 className="item-title">{title}</h4>
-      <p className="item-description">{description}</p>
+      <div className="item-logo">
+        {title.charAt(0)}
+      </div>
+      <div className='item-content'>
+        <div className="item-title">
+          {title}
+        </div>
+        <TableItemDescription description={description} isCompleted={isCompleted} inTime={inTime} />
+      </div>
+      <a href='#' className='item-more'>
+        {iconCreator(moreIcon)}
+      </a>
     </li>
   );
 };

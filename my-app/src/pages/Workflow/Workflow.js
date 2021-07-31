@@ -7,7 +7,7 @@ export const Workflow = () => {
         <Sidebar />
         <div className='app-right-container'>
         <AppHeader />
-        <main className='main'>
+        <main className='main-table'>
           <WorkflowTable/>
         </main>
         </div>

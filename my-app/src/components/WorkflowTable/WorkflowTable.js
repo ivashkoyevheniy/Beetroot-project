@@ -6,11 +6,11 @@ export const WorkflowTable = () => {
   return (
     <div className='workflow-table'>
       <div className="table">
-        <TableTitle name="Todo" quantity={dataToDo.length} />
+        <TableTitle name="To Do" quantity={dataToDo.length} />
         <TableBody data={dataToDo} />
       </div>
       <div className="table">
-        <TableTitle name="inProgress" quantity={dataInProgress.length} />
+        <TableTitle name="in Progress" quantity={dataInProgress.length} />
         <TableBody data={dataInProgress} />
       </div>
       <div className="table">

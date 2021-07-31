@@ -1,4 +1,4 @@
-.MuiFormLabel-root.MuiInputLabel-root.MuiInputLabel-formControl.MuiInputLabel-animated.MuiInputLabel-outlined{
+/* .MuiFormLabel-root.MuiInputLabel-root.MuiInputLabel-formControl.MuiInputLabel-animated.MuiInputLabel-outlined{
     transform: translate(14px, 0px) scale(0.75);
 }
 
@@ -47,4 +47,50 @@
 
 .RootBase-root-24 > .MuiButtonBase-root.MuiIconButton-root.NavigationButton-button-25:first-of-type{
     order: 1;
+} */
+
+.MuiInputLabel-outlined.MuiInputLabel-shrink {
+  transform: translate(14px) scale(0.75);
+}
+
+.Cell-cell-70 {
+  border-top: 1px solid rgba(224, 224, 224, 1);
+}
+
+/* .TitleCell-container-55 .TitleCell-content-56 {
+    border-top: 1px solid rgba(224, 224, 224, 1);
+} */
+
+@media screen and (max-width: 480px) {
+  .makeStyles-cell-75 .Label-label-80 {
+    padding-right: 0;
+  }
+  .MuiTable-root.makeStyles-timeScaleContainer-73 {
+    width: 100%;
+  }
+  .TitleCell-container-55 .TitleCell-content-56 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .TitleCell-title-57.MuiTypography-body1 {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+  .makeStyles-flexRow-49 {
+    min-width: 60px;
+  }
+  .makeStyles-ordinaryHeaderBorder-46 .makeStyles-dayScaleEmptyCell-54 {
+    width: 100%;
+    min-width: 60px;
+    justify-content: center;
+  }
+  /* .MuiTableRow-root .MuiTableCell-root {
+      width: 10%;
+    } */
+
+  .MuiTableRow-root:last-child .Cell-cell-70 {
+    min-width: 50.25px;
+  }
 }
