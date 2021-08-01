@@ -1,3 +1,87 @@
+export const tasks = [
+    {
+        id:1,
+        title: 'New website for JCD.pl',
+        description: '5 days left',
+        inTime: true,
+        status: 'toDo'
+    },
+    {
+        id:2,
+        title: 'Free PSD Template vol. 3',
+        description: '5 days left',
+        inTime: true,
+        status: 'toDo'
+    }, {
+        id:3,
+        title: 'New logo for Google',
+        description: '5 days left',
+        inTime: true,
+        status: 'toDo'
+    }, {
+        id:4,
+        title: 'New website for Windu.org',
+        description: '5 days left',
+        inTime: true,
+        status: 'toDo'
+    }, {
+        id:5,
+        title: 'Free PSD Template vol. 2',
+        description: '5 days left',
+        inTime: true,
+        status: 'toDo'
+    }, {
+        id:6,
+        title: 'Iconset vol. 3',
+        description: '5 days left',
+        inTime: true,
+        status: 'toDo'
+    },
+    {
+        id:7,
+        title: '999999New logo for Apple',
+        description: '1 day left',
+        inTime: true,
+        status: 'inProgress'
+    }, {
+        id:8,
+        title: 'Daily UI Kit',
+        description: '5 days left',
+        inTime: true,
+        status: 'inProgress'
+    }, {
+        id:9,
+        title: 'Business Card',
+        description: '2 days delays',
+        inTime: false,
+        status: 'inProgress'
+    },
+    {
+        id:10,
+        title: 'Free PSD Template vol. 1',
+        description: 'Completed!',
+        inTime: true,
+        status: 'completed'
+    }, {
+        id:11,
+        title: 'Iconset vol. 1',
+        description: 'Completed!',
+        inTime: true,
+        status: 'completed'
+    }, {
+        id:12,
+        title: 'New website for Sumy.co',
+        description: 'Completed!',
+        inTime: true,
+        status: 'completed'
+    }, {
+        id:13,
+        title: 'Iconset vol. 2',
+        description: 'Completed!',
+        inTime: true,
+        status: 'completed'
+    }
+];
 export const dataToDo = [
     {
         title: 'New website for JCD.pl',
