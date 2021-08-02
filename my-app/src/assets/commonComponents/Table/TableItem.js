@@ -3,12 +3,11 @@ import { iconCreator } from "../../../utils";
 import { TableItemDescription } from ".";
 
 export const TableItem = ({ data }) => {
-  const { name, title, description, isCompleted, inTime } = data;
-  console.log(title);
+  const {name, title, description, isCompleted, inTime } = data;
   return (
     <li className="table-item">
       <div className="item-logo">
-        {title.charAt(0)}
+        {title && title[0]}
       </div>
       <div className='item-content'>
         <div className="item-title">
