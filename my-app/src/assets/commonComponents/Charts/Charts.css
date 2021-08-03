@@ -1,0 +1,29 @@
+#center-container .MuiList-padding {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.MuiTypography-root.Title-root-2.MuiTypography-h5,
+.MuiTypography-root.MuiTypography-h5 {
+  font: 700 36px "Roboto", sans-serif;
+  color: #8492af;
+  text-align: start;
+  margin-bottom: 40px;
+}
+
+.MuiPaper-root.MuiPaper-elevation1.MuiPaper-rounded {
+  box-shadow: none;
+  border-radius: 0;
+  border: 1px solid #d4d9e3;
+  padding: 30px;
+  box-sizing: border-box;
+}
+.Component-root-1 {
+  height: 410px !important;
+  padding: 0 !important;
+}
+
+#center-center {
+  margin-right: 40px;
+}

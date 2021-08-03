@@ -4,10 +4,10 @@ import arrowRight from './../../img/right-arrow.svg';
 import { iconCreator } from '../../../utils';
 
 export const Button = ( props ) => {
-    const { btnClass, title, toggler } = props;
+    const { btnClass, title, toggler, btnHandle } = props;
     return (
         <div className='button-container'>
-            <button type="sumbit" className={btnClass}>{title}</button>
+            <button onClick={btnHandle} type="sumbit" className={btnClass}>{title}</button>
             {toggler && <div className='icon-container icon-container--button'>{iconCreator(arrowRight)}</div>}
         </div>
     );

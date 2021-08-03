@@ -15,14 +15,14 @@ export const AppHeader = () => {
     return (
         <header className='app-header'>
             <div className='left-header-container'>
-                <a className='hamburger-link' href='#'>
+                <button className='hamburger-link'>
                     <div className='icon-container icon-container--header icon-container--small'>
                         {iconCreator(caretleftIcon)}
                     </div>
                     <div className='icon-container icon-container--header'>
                         {iconCreator(hamburgerIcon)}
                     </div>
-                </a>
+                </button>
                 <Search />
             </div>
             <div className='right-header-container'>
@@ -36,9 +36,9 @@ export const AppHeader = () => {
                     {iconCreator(notificationIcon)}
                 </div>
                 <Avatar avatarSrc={avatarImage} avatarClass='avatar-image'></Avatar>
-                <a href='#' className='icon-container icon-container--header'>
+                <button href='#' className='icon-container icon-container--header'>
                     {iconCreator(caretdownIcon)}
-                </a>
+                </button>
             </div>
         </header>
     );

@@ -5,3 +5,4 @@ export * from './navigationLink/navigationLink';
 export * from './Search/Search';
 export * from './Avatar/Avatar';
 export * from './Table';
+export * from "./Charts";

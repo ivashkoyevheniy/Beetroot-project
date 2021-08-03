@@ -436,17 +436,15 @@ class CalendarComp extends React.PureComponent {
             onEditingAppointmentChange={this.onEditingAppointmentChange}
             onAddedAppointmentChange={this.onAddedAppointmentChange}
           />
+          <MonthView />
           <WeekView
             startDayHour={startDayHour}
             endDayHour={endDayHour}
           />
-          <MonthView />
-          
           <DayView
           startDayHour={startDayHour}
           endDayHour={endDayHour}
           />
-          
           <AllDayPanel />
           <EditRecurrenceMenu />
           <Appointments />
@@ -456,7 +454,6 @@ class CalendarComp extends React.PureComponent {
             showDeleteButton
           />
           <Toolbar />
-         
           <ViewSwitcher />
           <AppointmentForm
             overlayComponent={this.appointmentForm}

@@ -4,6 +4,15 @@
   display: flex;
 }
 
+.in-dev {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30%;
+  font: 700 40px "Roboto", sans-serif;
+}
+
 .hidden {
   display: hidden;
 }
@@ -28,7 +37,7 @@
 
 .main-table {
   height: 100%;
-  margin: 3%;
+  margin:  2%;
   overflow: auto;
 }
 

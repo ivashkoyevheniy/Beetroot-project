@@ -1,18 +1,10 @@
 import React from "react";
-import { AppHeader, HomeTable, Sidebar } from "../../components";
-import './Home.css';
+import { HomeTable, AppLayout } from "../../components";
 
-export const Home = () => { 
+export const Home = () => {
   return (
-    <div className="app-container">
-        <Sidebar />
-        <div className='app-right-container'>
-        <AppHeader />
-        <main className='main-table'>
-          <HomeTable/>
-        </main>
-        </div>
-        
-    </div>
+    <AppLayout>
+    <HomeTable />
+    </AppLayout>
   );
 }

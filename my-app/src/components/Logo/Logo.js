@@ -1,9 +1,10 @@
 import './Logo.css';
 import logo from './../../assets/img/logo.png';
+import { Link } from "react-router-dom";
 
 export const Logo = () => {
     return (
-        <a href='#' className='logo-container'>
+        <Link to='/' className='logo-container'>
             <div className='logo-image-container'>
             <img
                 alt='logo'
@@ -12,6 +13,6 @@ export const Logo = () => {
             </img>
             </div>
             <span className='logo-title'>Mercury</span>
-        </a>
+        </Link>
     );
 }

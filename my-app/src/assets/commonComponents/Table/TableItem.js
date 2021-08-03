@@ -3,8 +3,7 @@ import { iconCreator } from "../../../utils";
 import { TableItemDescription } from ".";
 
 export const TableItem = ({ data }) => {
-  const { name, title, description, isCompleted, inTime } = data;
-  console.log(title);
+  const { title, description, isCompleted, inTime } = data;
   return (
     <li className="table-item">
       <div className="item-logo">
@@ -16,9 +15,9 @@ export const TableItem = ({ data }) => {
         </div>
         <TableItemDescription description={description} isCompleted={isCompleted} inTime={inTime} />
       </div>
-      <a href='#' className='item-more'>
+      <button className='item-more'>
         {iconCreator(moreIcon)}
-      </a>
+      </button>
     </li>
   );
 };

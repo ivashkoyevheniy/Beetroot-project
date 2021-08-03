@@ -1,33 +1,75 @@
-import React from 'react';
+import React from "react";
 import './App.css';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { Login, Register, Workflow, Home, Calendar} from './pages/';
+import { Route, Switch } from 'react-router-dom';
+import { Login, Register, Workflow, Home, Calendar, Statistics, Users, Settings } from './pages/';
 
 function App() {
 
- return (
+  return (
     <div className="App">
-      <Router>
         <Switch>
-          <Route path="/home">
-             <Home />
+        <Route path="/login">
+            <Login />
+          </Route>
+          <Route path="/register">
+            <Register />
+          </Route>
+          <Route exact path="/">
+            <Home />
           </Route>
           <Route path="/workflow">
-            <Workflow/>
+            <Workflow />
+          </Route>
+          <Route path="/statistics">
+            <Statistics />
           </Route>
           <Route path="/calendar">
-            <Calendar/>
+            <Calendar />
+          </Route>
+          <Route path="/users">
+            <Users />
+          </Route>
+          <Route path="/settings">
+            <Settings />
           </Route>
         </Switch>
-      </Router>
-
-      {/* <Login/> */}
-      {/* <Workflow/> */}
-        {/* <Calendar/> */}
-      {/* <Register /> */}
-      {/* <Home /> */}
     </div>
   );
 }
 
 export default App;
+
+
+
+
+// function Login() {
+//   const { state } = useLocation();
+//   const { from } = state || { from: { pathname: "/" } };
+//   const [redirectToReferrer, setRedirectToReferrer] = useState(false);
+
+//   const login = () => {
+//     fakeAuth.authenticate(() => {
+//       setRedirectToReferrer(true);
+//     });
+//   };
+
+//   if (redirectToReferrer) {
+//     return <Redirect to={from} />;
+//   }
+
+//   return (
+//     <div>
+//       <p>You must log in to view the page at {from.pathname}</p>
+//       <button onClick={login}>Log in</button>
+//     </div>
+//   );
+// }
+
+// /* A fake authentication function */
+// export const fakeAuth = {
+//   isAuthenticated: false,
+//   authenticate(cb) {
+//     this.isAuthenticated = true;
+//     setTimeout(cb, 100);
+//   }
+// };
