@@ -14,10 +14,10 @@ export const Form = ({ toggler, btnTitle }) => {
 //     confirmPassword:''
 //   }
 
-  const [state, setState] = useState(initialState);
-  const onHandleChange = (name, value) => {
-    setState({...state, [name]: value})
-  };
+  // const [state, setState] = useState(initialState);
+  // const onHandleChange = (name, value) => {
+  //   setState({...state, [name]: value})
+  // };
     
   return (
     <form type='submit' className="login-form">
