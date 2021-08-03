@@ -2,8 +2,14 @@ import "./Login.css";
 import React from "react";
 import { Header } from "../../components";
 import { Form } from "../../assets/commonComponents";
+import { login } from "../../actions/regActions";
 
 export const Login = () => {
+  const onHandleClick = (e, state)=> {
+    e.preventDefault();
+    login(state);
+  }
+
   return (
     <div className="login">
       <div className="login-container">
@@ -11,7 +17,7 @@ export const Login = () => {
         <div className="login-title">
           Welcome<span className="login-title--blue"> back!</span>
         </div>
-        <Form toggler={true}/>
+        <Form onSubmit={onHandleClick} toggler={true}/>
       </div>
     </div>
   );
