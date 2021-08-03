@@ -6,12 +6,8 @@ export const PublicRoutes = () => {
   return (
     <Router>
       <Switch>
-        <Route path={routes.registration}>
-          <Register />
-        </Route>
-        <Route path={routes.loginOrHome}>
-          <Login />
-        </Route>
+        <Route path={routes.registration} exact component={Register}/>
+        <Route path={routes.loginOrHome} exact component={Login}/>
       </Switch>
     </Router>
   );

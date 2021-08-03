@@ -6,15 +6,9 @@ export const PrivateRoutes = () => {
   return (
     <Router>
       <Switch>
-        <Route path={routes.loginOrHome}>
-          <Home />
-        </Route>
-        <Route path={routes.calendar}>
-          <Calendar />
-        </Route>
-        <Route path={routes.workflow}>
-          <Workflow />
-        </Route>
+        <Route path={routes.loginOrHome} exact component={Home}/>
+        <Route path={routes.calendar} exact component={Calendar}/>
+        <Route path={routes.workflow} exact component={Workflow}/>
       </Switch>
     </Router>
   );
