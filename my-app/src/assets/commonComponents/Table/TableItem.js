@@ -4,10 +4,11 @@ import { TableItemDescription } from ".";
 
 export const TableItem = ({ data }) => {
   const { title, description, isCompleted, inTime } = data;
+  // const {name, title, description, isCompleted, inTime } = data;
   return (
     <li className="table-item">
       <div className="item-logo">
-        {title.charAt(0)}
+        {title && title[0]}
       </div>
       <div className='item-content'>
         <div className="item-title">

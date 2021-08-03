@@ -5,6 +5,8 @@ import LineChart from "../../assets/commonComponents/Charts/LineChart";
 import PieChart from "../../assets/commonComponents/Charts/PieChart";
 
 
+// import { homePageMessages, homePageTasks } from "../../utils/fakeData";
+// import { v4 as uuidv4 } from 'uuid';
 export const HomeTable = () => {
   return (
     <div className="home-table">
@@ -17,6 +19,7 @@ export const HomeTable = () => {
       <div className="table table-column">
         <TableTitle name="Tasks" />
         <TableBody data={dataInProgress, dataToDo} />
+        {/* <TableBody key={uuidv4()} data={homePageTasks} /> */}
       </div>
       <div className="table table-column">
         <TableTitle name="Messages" />
@@ -26,6 +29,7 @@ export const HomeTable = () => {
         <TableTitle name="Activity" />
         <TableBody data={dataToDo} />
       </div>
+        {/* <TableBody key={uuidv4()} data={homePageMessages} /> */}
       </div>
     </div>
   );
