@@ -157,3 +157,69 @@ export const homePageActivity = [
         time: "3 hours ago"
     },
 ]
+
+export const usersData = [
+    {
+        avatar:'Img',
+        name:'John Doe',
+        position:'CEO',
+        isOnline:true,
+        time:'',
+        email:'johndoe@design.com',
+        phone:'(000) 111 222 333'
+    },
+    {
+        avatar:'Img',
+        name:'Nina Jones',
+        position:'UX Designer',
+        isOnline:true,
+        time:'',
+        email:'ninajones@design.com',
+        phone:'(000) 111 222 333'
+    },
+    {
+        avatar:'Img',
+        name:'Alex Smith',
+        position:'Web Designer',
+        isOnline:true,
+        time:'',
+        email:'alexsmith@design.com',
+        phone:'(000) 111 222 333'
+    },
+    {
+        avatar:'Img',
+        name:'Ann Clooney',
+        position:'Account Manager',
+        isOnline:false,
+        time:'20 minutes ago',
+        email:'annclooney@design.com',
+        phone:'(000) 111 222 333'
+    },
+    {
+        avatar:'Img',
+        name:'Patric Smith',
+        position:'Project manager',
+        isOnline:false,
+        time:'40 minutes ago',
+        email:'patricsmith@design.com',
+        phone:'(000) 111 222 333'
+    },
+    {
+        avatar:'Img',
+        name:'Nicky Hunt',
+        position:'Product Designer',
+        isOnline:false,
+        time:'1 hour ago',
+        email:'nickyhunt@design.com',
+        phone:'(000) 111 222 333'
+    },
+    {
+        avatar:'Img',
+        name:'Jane Doe',
+        position:'Graphic Designer',
+        isOnline:false,
+        time:'2 days ago',
+        email:'janedoe@design.com',
+        phone:'(000) 111 222 333'
+    }
+]
