@@ -5,3 +5,4 @@ export * from './Navigation/Navigation';
 export * from './AppHeader/AppHeader';
 export * from './WorkflowTable/WorkflowTable';
 export * from './HomeTable/HomeTable';
+export * from './Users/Users';
