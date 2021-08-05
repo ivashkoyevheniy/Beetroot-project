@@ -1,27 +1,27 @@
-import './navigationLink.css';
-import { iconCreator } from '../../../utils';
-import { Link } from "react-router-dom";
-import React, { useState } from 'react';
-// import { NavLink } from 'react-router-dom';
+import "./navigationLink.css";
+import { iconCreator } from "../../../utils";
+import { NavLink } from "react-router-dom";
+import React from "react";
 
-export const NavigationLink = ({ linkClass, link, title, icon, toggler, activeClass }) => {
-    const [isActive, setActiveState] = useState(false);
-
-    function clickHandler() {
-        setActiveState(!isActive);
-    }
-
-    function getClassName() {
-        return linkClass + ` ${isActive && activeClass}`;
-    }
-
-    return (
-        <div className='nav-link-container'>
-            {toggler && <div className='icon-container icon-container--nav'>{iconCreator(icon)}</div>}
-            <Link to={link} className={getClassName()} onClick={clickHandler}>{title}</Link>
-   {/* return (
-        <div className='nav-link-container'> 
-            {toggler && <div className='icon-container icon-container--nav'>{iconCreator(icon)}</div>}<NavLink className={linkClass} to={link}>{title}</NavLink> */}
+export const NavigationLink = ({ isRegPage, link, title, icon, toggler }) => {
+  return (
+    <div className="nav-link-container">
+      {toggler && (
+        <div className="icon-container icon-container--nav">
+          {iconCreator(icon)}
         </div>
-    );
-}
+      )}
+      <NavLink
+        to={link}
+        activeClassName={
+          isRegPage ? "login-nav-link--active" : "sidebar-nav-link--active"
+        }
+        className={
+          isRegPage ? "nav-link login-nav-link" : "nav-link sidebar-nav-link"
+        }
+      >
+        {title}
+      </NavLink>
+    </div>
+  );
+};

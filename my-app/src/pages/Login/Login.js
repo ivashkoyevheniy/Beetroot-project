@@ -14,15 +14,8 @@ export const Login = () => {
     <AuthLayout>
       <div className="login-title">
         Welcome<span className="login-title--blue"> back!</span>
-    {/* <div className="login">
-      <div className="login-container">
-        <Header />
-        <div className="login-title">
-          Welcome<span className="login-title--blue"> back!</span>
-        </div>
-        <Form onSubmit={onHandleClick} toggler={true}/> */}
       </div>
-      <Form btnTitle='Login' toggler={true} />
+        <Form onSubmit={onHandleClick} toggler={true}/>
     </AuthLayout>
 
   );

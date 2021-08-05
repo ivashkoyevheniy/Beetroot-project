@@ -1,24 +1,10 @@
 import React from "react";
-import { AppLayout } from "../../components";
+import { AppLayout, UsersComponent } from "../../components";
 
-export const Users = () => { 
+export const Users = () => {
   return (
     <AppLayout>
-    <div></div>
+      <UsersComponent />
     </AppLayout>
-// import { AppHeader, Sidebar, UsersComponent } from "../../components";
-
-// export const Users = () => { 
-//   return (
-//     <div className="app-container">
-//         <Sidebar />
-//         <div className='app-right-container'>
-//         <AppHeader />
-//         <main className='main-table'>
-//             <UsersComponent/>
-//         </main>
-//         </div>
-        
-//     </div>
   );
-}
+};
