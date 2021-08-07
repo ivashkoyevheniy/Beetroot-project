@@ -17,7 +17,7 @@ export const Navigation = (props) => {
             {toggler && <NavigationLink title="Login" isRegPage={toggler}  link={routes.loginOrHome} />}
             {!toggler && <NavigationLink toggler="true" icon={homeIcon} title="Home"  link={routes.loginOrHome} />}
             {!toggler && <NavigationLink toggler="true" icon={statisticsIcon} title="Workflow"  link={routes.workflow} />}
-            {!toggler && <NavigationLink toggler="true" icon={workflowIcon} title="Statistics"  link={routes.statistic} />}
+            {!toggler && <NavigationLink toggler="true" icon={workflowIcon} title="Statistics"  link={routes.statistics} />}
             {!toggler && <NavigationLink toggler="true" icon={calendarIcon} title="Calendar"  link={routes.calendar} />}
             {!toggler && <NavigationLink toggler="true" icon={userIcon} title="Users"  link={routes.users} />}
             {!toggler && <NavigationLink toggler="true" icon={settingsIcon} title="Settings"  link={routes.settings} />}

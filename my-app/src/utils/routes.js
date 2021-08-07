@@ -3,7 +3,7 @@ export const routes = {
     registration: '/registration',
     workflow: '/workflow',
     calendar: '/calendar',
-    statistic: '/statistic',
+    statistics: '/statistics',
     users: '/users',
     settings: '/settings'
 }
