@@ -13,11 +13,11 @@ export const NavigationLink = ({ isRegPage, link, title, icon, toggler }) => {
       )}
       <NavLink
         to={link}
-        activeClassName={
-          isRegPage ? "login-nav-link--active" : "sidebar-nav-link--active"
-        }
         className={
           isRegPage ? "nav-link login-nav-link" : "nav-link sidebar-nav-link"
+        }
+        activeClassName={
+          isRegPage ? "login-nav-link--active" : "sidebar-nav-link--active"
         }
       >
         {title}

@@ -14,8 +14,8 @@ export const Navigation = (props) => {
     return (
         <nav className={naviClass}>
             {toggler && <NavigationLink title="Register" isRegPage={toggler} link={routes.registration} />}
-            {toggler && <NavigationLink title="Login" isRegPage={toggler}  link={routes.loginOrHome} />}
-            {!toggler && <NavigationLink toggler="true" icon={homeIcon} title="Home"  link={routes.loginOrHome} />}
+            {toggler && <NavigationLink title="Login" isRegPage={toggler}  link={routes.login} />}
+            {!toggler && <NavigationLink toggler="true" icon={homeIcon} title="Home"  link={routes.home} />}
             {!toggler && <NavigationLink toggler="true" icon={statisticsIcon} title="Workflow"  link={routes.workflow} />}
             {!toggler && <NavigationLink toggler="true" icon={workflowIcon} title="Statistics"  link={routes.statistics} />}
             {!toggler && <NavigationLink toggler="true" icon={calendarIcon} title="Calendar"  link={routes.calendar} />}

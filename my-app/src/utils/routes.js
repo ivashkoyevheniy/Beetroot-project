@@ -1,6 +1,7 @@
 export const routes = {
-    loginOrHome: '/',
+    login: '/login',
     registration: '/registration',
+    home: '/home',
     workflow: '/workflow',
     calendar: '/calendar',
     statistics: '/statistics',

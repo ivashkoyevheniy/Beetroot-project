@@ -13,7 +13,7 @@ export const Register = () => {
     if(password === confirmPassword) {
       alert("Your account succesfully created");
       registration(state)
-      history.push(routes.loginOrHome);
+      history.push(routes.login);
     } else alert("Please enter the same password");
   }
   return (

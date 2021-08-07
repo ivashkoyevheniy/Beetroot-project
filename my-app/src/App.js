@@ -1,14 +1,20 @@
 import React from "react";
-import './App.css';
- 
+import { Login } from "./pages/";
+import { routes } from "./utils/routes";
+import { Route, Redirect, useHistory  } from "react-router-dom";
 
-import { PrivateRoutes, PublicRoutes} from './pages/';
+import './App.css';
+
+
+import { PrivateRoutes, PublicRoutes } from './pages/';
 
 function App() {
   const token = JSON.parse(localStorage.getItem('token'));
- return (
+  const history = useHistory();
+  history.push(routes.login);
+  return (
     <div className="App">
-      { token ? <PrivateRoutes accessToken={token}/> : <PublicRoutes/>}
+      {token ? <PrivateRoutes accessToken={token} /> : <PublicRoutes />}
 
     </div>
   );
