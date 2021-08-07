@@ -9,9 +9,13 @@ import { Search } from '../../assets/commonComponents';
 import { Button } from '../../assets/commonComponents';
 import { Avatar } from '../../assets/commonComponents';
 import avatarImage from './../../assets/img/user-avatar.jpg';
-
+import exitImg from './../../assets/img/exit.svg'; 
 
 export const AppHeader = () => {
+    const onHandleClick = () => {
+        localStorage.clear();
+        window.location.reload();
+    }
     return (
         <header className='app-header'>
             <div className='left-header-container'>
@@ -39,6 +43,7 @@ export const AppHeader = () => {
                 <button href='#' className='icon-container icon-container--header'>
                     {iconCreator(caretdownIcon)}
                 </button>
+                <button onClick={onHandleClick}>{iconCreator(exitImg)}</button>
             </div>
         </header>
     );
