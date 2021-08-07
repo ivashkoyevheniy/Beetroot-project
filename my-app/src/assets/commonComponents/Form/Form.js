@@ -24,7 +24,8 @@ export const Form = ({ toggler , onSubmit}) => {
       <Input placeholder="Username" type="text" onChange={onHandleChange}  inputName='username' icon={userIcon} />
       <Input placeholder="Password" type="password" onChange={onHandleChange} inputName='password' icon={passwordIcon} />
       {!toggler && <Input placeholder="Confirm password" onChange={onHandleChange} type="password" inputName='confirmPassword' icon={passwordIcon} />}
-      <Button toggler={true} btnClass='btn btn-primary' title="Enter"></Button> 
+      {toggler && <Button toggler={true} btnClass='btn btn-primary' title="Enter"></Button>}
+      {!toggler && <Button toggler={true} btnClass='btn btn-primary' title="Register"></Button>}
     </form>
   );
 };
