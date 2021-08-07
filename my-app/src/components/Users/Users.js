@@ -87,7 +87,7 @@ export const UsersComponent = () => {
           <button key={uuidv4()}>{i}</button>
         ))}
         <button>
-          <img src={arrow} />
+          <img src={arrow} alt='arrow'/>
         </button>
       </div>
     </>

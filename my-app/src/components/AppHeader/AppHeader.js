@@ -13,7 +13,7 @@ import exitImg from './../../assets/img/exit.svg';
 
 export const AppHeader = () => {
     const onHandleClick = () => {
-        localStorage.clear();
+        localStorage.remove('token');
         window.location.reload();
     }
     return (
