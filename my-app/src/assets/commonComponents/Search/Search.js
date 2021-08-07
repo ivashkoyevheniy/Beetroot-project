@@ -6,7 +6,7 @@ export const Search = () => {
     return (
         <div className='search'>
             <input className='search-field' type='search' name='search' />
-            <button href='#' className='search-link'>
+            <button className='search-link'>
                 {iconCreator(searchIcon)}
             </button>
         </div>

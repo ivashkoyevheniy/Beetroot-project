@@ -14,7 +14,7 @@
 }
 
 .hidden {
-  display: hidden;
+  visibility: hidden;
 }
 
 .delete {
