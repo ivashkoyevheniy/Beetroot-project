@@ -12,6 +12,7 @@ export const Input = (props) => {
           placeholder={placeholder}
           onChange={e => onChange(inputName, e.target.value)}
           className="login-input-field"
+          required
         ></input>
       </div>
     </div>

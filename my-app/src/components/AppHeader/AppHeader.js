@@ -13,7 +13,7 @@ import logoutIcon from "./../../assets/img/logout-icon.svg";
 
 export const AppHeader = () => {
     const onHandleClick = () => {
-        localStorage.remove('token');
+        localStorage.removeItem('token');
         window.location.reload();
     }
     return (

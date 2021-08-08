@@ -1,5 +1,3 @@
-
-
 export const registration = (data) => {
     const savedData = localStorage.getItem('registration');
     savedData ? alert('You already have an account! Please login!') :
@@ -16,5 +14,4 @@ export const login = (data) => {
         }
         else alert('Enter correct username and password!')
     } else alert('Please enter correct username and password or register new account!')
-   
 }
