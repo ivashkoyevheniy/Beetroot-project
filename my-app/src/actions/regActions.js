@@ -7,10 +7,14 @@ export const registration = (data) => {
 }
 
 export const login = (data) => {
-    const { username, password } = JSON.parse(localStorage.getItem('registration'));
-    if (data.username === username && data.password === password){
-        localStorage.setItem('token', JSON.stringify('you received token'));
-        window.location.reload();
-    }
-    else alert('Enter correct username and password!')
+    const savedData = JSON.parse(localStorage.getItem('registration'))
+    if(savedData){
+        const { username, password } = savedData;
+        if (data.username === username && data.password === password){
+            localStorage.setItem('token', JSON.stringify('you received token'));
+            window.location.reload();
+        }
+        else alert('Enter correct username and password!')
+    } else alert('Please enter correct username and password or register new account!')
+   
 }

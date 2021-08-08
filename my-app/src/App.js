@@ -1,7 +1,6 @@
 import React from "react";
-import { Login } from "./pages/";
 import { routes } from "./utils/routes";
-import { Route, Redirect, useHistory  } from "react-router-dom";
+import { useHistory  } from "react-router-dom";
 
 import './App.css';
 

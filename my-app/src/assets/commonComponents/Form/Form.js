@@ -15,9 +15,9 @@ export const Form = ({ toggler , onSubmit}) => {
 
   const [state, setState] = useState(initialState);
   const onHandleChange = (name, value) => {
-    setState({...state, [name]: value})
+    setState({...state, [name]: value});
   };
-    
+
   return (
      <form onSubmit={e => onSubmit(e, state)} className="login-form">
       {!toggler && <Input placeholder="Email" onChange={onHandleChange} inputName='email' type="email" icon={emailIcon} />}
