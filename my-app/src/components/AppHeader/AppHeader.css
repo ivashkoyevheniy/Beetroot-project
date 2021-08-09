@@ -12,10 +12,14 @@
 .left-header-container,
 .right-header-container {
   width: 28%;
-  min-width: 320px;
+  min-width: 350px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.right-header-container {
+  width: 32%;
 }
 
 .hamburger-link {

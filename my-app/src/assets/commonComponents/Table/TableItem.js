@@ -2,9 +2,8 @@ import moreIcon from "../../img/more-icon.svg";
 import { iconCreator } from "../../../utils";
 import { TableItemDescription } from ".";
 
-export const TableItem = ({ data }) => {
-  const { title, description, isCompleted, inTime } = data;
-  // const {name, title, description, isCompleted, inTime } = data;
+export const TableItem = ({ data, toggler }) => {
+  const { title, description, isCompleted, inTime, isReaded, time } = data;
   return (
     <li className="table-item">
       <div className="item-logo">
@@ -14,11 +13,11 @@ export const TableItem = ({ data }) => {
         <div className="item-title">
           {title}
         </div>
-        <TableItemDescription description={description} isCompleted={isCompleted} inTime={inTime} />
+        <TableItemDescription description={description} isCompleted={isCompleted} inTime={inTime} isReaded={isReaded} time={time} />
       </div>
-      <button className='item-more'>
+      {!toggler && <button className='item-more'>
         {iconCreator(moreIcon)}
-      </button>
+      </button>}
     </li>
   );
 };

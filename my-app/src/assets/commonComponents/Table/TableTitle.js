@@ -1,11 +1,14 @@
 import { iconCreator } from "../../../utils";
 
-export const TableTitle = ({ name, quantity, icon, toggler }) => {
+export const TableTitle = ({ name, quantity, addQuantity, icon, toggler, quantityToggler }) => {
   return (
-    <h3 className="table-title">
-      {name}
-      <span className="table-quantity">({(quantity)})</span>
+    <div className="table-title">
+      <span className="table-title-text">{(name)}</span>
+      <div className="table-quantity-container">
+      <span className="table-quantity">{(quantity)}</span>
+      {quantityToggler && <span className="table-quantity">{(addQuantity)}</span>}
+      </div>
       {toggler && <span className='icon-container icon-container--nav'>{iconCreator(icon)}</span>}
-    </h3>
+    </div>
   );
 };

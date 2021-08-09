@@ -8,3 +8,11 @@ ul {
   padding: 0;
   list-style: none;
 }
+
+.workflow-table .table .table-title .table-quantity::before {
+  content: "(";
+}
+
+.workflow-table .table .table-title .table-quantity::after {
+  content: ")";
+}
