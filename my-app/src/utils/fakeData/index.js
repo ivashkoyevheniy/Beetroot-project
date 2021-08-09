@@ -1,3 +1,13 @@
+import avatar1 from "./../../assets/img/avatar1.png";
+import avatar2 from "./../../assets/img/avatar2.png";
+import avatar3 from "./../../assets/img/avatar3.png";
+import avatar4 from "./../../assets/img/avatar4.png";
+import avatar5 from "./../../assets/img/avatar5.png";
+import avatar6 from "./../../assets/img/avatar6.png";
+import avatar7 from "./../../assets/img/avatar7.png";
+
+
+
 export const dataToDo = [
     {
         title: 'New website for JCD.pl',
@@ -78,28 +88,28 @@ export const dataInCompleted = [
 
 export const homePageMessages = [
     {
-        avatar: 'img',
+        avatar: avatar2,
         name: "Nina Jones",
         time: "5 minutes ago",
         comment: "Hey You! It's me again :-) I attached a new (...)",
         isReaded: false
     },
     {
-        avatar: 'img',
+        avatar: avatar2,
         name: "Nina Jones",
         time: "About 20 hours ago",
         comment: "Hey! I attached some new PSD files for (...)",
         isReaded: false
     },
     {
-        avatar: 'img',
-        name: "James Smith",
+        avatar: avatar1,
+        name: "John Doe",
         time: "2 days ago",
         comment: "Good morning, you are fired!",
         isReaded: true
     },
     {
-        avatar: 'img',
+        avatar: avatar2,
         name: "Nina Jones",
         time: "About 2 weeks ago",
         comment: "Hello! Could You bring me coffee please?",
@@ -109,29 +119,29 @@ export const homePageMessages = [
 
 export const homePageActivity = [
     {
-        avatar: "img",
+        avatar: avatar2,
         name: "Nina Jones",
         activity: "added a new project",
         project: "Free UI Kit",
         time: "Just now"
     },
     {
-        avatar: "img",
-        name: "James Smith",
+        avatar: avatar1,
+        name: "John Doe",
         activity: "commented project",
         project: "Free PSD Template",
         time: "40 minutes ago"
     },
     {
-        avatar: "img",
-        name: "Alex Clooney",
+        avatar: avatar3,
+        name: "Alex Smith",
         activity: "completed task",
         project: "Symu Website",
         time: "1 hour ago"
     },
     {
-        avatar: "img",
-        name: "Alexandra Spears",
+        avatar: avatar7,
+        name: "Jane Doe",
         activity: "added a new project",
         project: "Free PSD (...)",
         time: "3 hours ago"
@@ -140,7 +150,7 @@ export const homePageActivity = [
 
 export const usersData = [
     {
-        avatar:'Img',
+        avatar: avatar1,
         name:'John Doe',
         position:'CEO',
         isOnline:true,
@@ -149,7 +159,7 @@ export const usersData = [
         phone:'(000) 111 222 333'
     },
     {
-        avatar:'Img',
+        avatar: avatar2,
         name:'Nina Jones',
         position:'UX Designer',
         isOnline:true,
@@ -158,7 +168,7 @@ export const usersData = [
         phone:'(000) 111 222 333'
     },
     {
-        avatar:'Img',
+        avatar: avatar3,
         name:'Alex Smith',
         position:'Web Designer',
         isOnline:true,
@@ -167,7 +177,7 @@ export const usersData = [
         phone:'(000) 111 222 333'
     },
     {
-        avatar:'Img',
+        avatar: avatar4,
         name:'Ann Clooney',
         position:'Account Manager',
         isOnline:false,
@@ -176,7 +186,7 @@ export const usersData = [
         phone:'(000) 111 222 333'
     },
     {
-        avatar:'Img',
+        avatar: avatar5,
         name:'Patric Smith',
         position:'Project manager',
         isOnline:false,
@@ -185,7 +195,7 @@ export const usersData = [
         phone:'(000) 111 222 333'
     },
     {
-        avatar:'Img',
+        avatar: avatar6,
         name:'Nicky Hunt',
         position:'Product Designer',
         isOnline:false,
@@ -194,7 +204,7 @@ export const usersData = [
         phone:'(000) 111 222 333'
     },
     {
-        avatar:'Img',
+        avatar: avatar7,
         name:'Jane Doe',
         position:'Graphic Designer',
         isOnline:false,

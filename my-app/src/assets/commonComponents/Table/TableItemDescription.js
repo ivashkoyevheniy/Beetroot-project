@@ -6,20 +6,12 @@ import replyIcon from "../../img/reply-icon.svg";
 import { iconCreator } from "../../../utils";
 
 
-export const TableItemDescription = ({ description, isCompleted, inTime, isReaded, time }) => {
+export const TableItemDescription = ({ description, isCompleted, inTime, comment, time, title}) => {
 
     if (!isCompleted && inTime) {
         return (
             <div className="item-description">
-                <div className='item-time-icon'>{iconCreator(lefttimeIcon)}</div>
-                {description}
-            </div>
-        );
-    }
-    else if (!isCompleted && !inTime) {
-        return (
-            <div className="item-description item-description--delay">
-                <div className='item-icon'>{iconCreator(timedelayIcon)}</div>
+                <div className='item-icon'>{iconCreator(lefttimeIcon)}</div>
                 {description}
             </div>
         );
@@ -32,9 +24,17 @@ export const TableItemDescription = ({ description, isCompleted, inTime, isReade
             </div>
         );
     }
-    else if (isReaded) {
+    else if (!isCompleted && !inTime && title) {
         return (
-            <div className="item-description item-description--messages">
+            <div className="item-description item-description--delay">
+                <div className='item-icon'>{iconCreator(timedelayIcon)}</div>
+                {description}
+            </div>
+        );
+    }
+    else if (comment) {
+        return (
+            <div className="item-description">
                 <div className='item-icon'>{iconCreator(replyIcon)}</div>
                 <div className='item-icon'>{iconCreator(settingsIcon)}</div>
             </div>

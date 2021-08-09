@@ -1,10 +1,13 @@
 import React from "react";
 import { AppLayout } from "../../components";
+import { StatisticsTable } from "../../components";
 
-export const Statistics = () => { 
+
+export const Statistics = () => {
+
   return (
     <AppLayout>
-    <div></div>
+      <StatisticsTable />
     </AppLayout>
   );
 }

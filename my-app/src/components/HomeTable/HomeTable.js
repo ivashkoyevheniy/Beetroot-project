@@ -13,7 +13,6 @@ export const HomeTable = () => {
 deleyTasks =  homePageTasks.filter(function(array) {
   return array.inTime === false;
 });
-console.log(readedMessages);
   return (
     <div className="home-table">
       <div className="table-title table-title--big">Hello John!</div>
@@ -24,15 +23,15 @@ console.log(readedMessages);
       <div className='home-bottom-container'>
       <div className="table table-column">
         <TableTitle quantityToggler="true" name="Tasks" quantity={homePageTasks.length} addQuantity={deleyTasks.length} />
-        <TableBody key={uuidv4()} data={homePageTasks} />
+        <TableBody type="homeTasks" key={uuidv4()} data={homePageTasks} />
       </div>
       <div className="table table-column">
         <TableTitle name="Messages" quantity={readedMessages.length} />
-        <TableBody key={uuidv4()} toogler='true' data={homePageMessages} />
+        <TableBody type="messages" key={uuidv4()} data={homePageMessages} />
       </div>
       <div className="table table-column">
         <TableTitle name="Activity" quantity={homePageActivity.length} />
-        <TableBody key={uuidv4()} toogler='true' data={homePageActivity} />
+        <TableBody type="activity" key={uuidv4()} data={homePageActivity} />
       </div>
       </div>
     </div>

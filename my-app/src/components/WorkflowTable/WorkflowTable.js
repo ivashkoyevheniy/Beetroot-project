@@ -8,15 +8,15 @@ export const WorkflowTable = () => {
     <div className='workflow-table'>
       <div className="table">
         <TableTitle name="To Do" quantity={dataToDo.length} />
-        <TableBody key={uuidv4()} data={dataToDo} />
+        <TableBody type="workflow" key={uuidv4()} data={dataToDo} />
       </div>
       <div className="table">
         <TableTitle name="in Progress" quantity={dataInProgress.length} />
-        <TableBody key={uuidv4()} data={dataInProgress} />
+        <TableBody type="workflow" key={uuidv4()} data={dataInProgress} />
       </div>
       <div className="table">
         <TableTitle name="Completed" quantity={dataInCompleted.length} />
-        <TableBody key={uuidv4()} data={dataInCompleted} />
+        <TableBody type="workflow" key={uuidv4()} data={dataInCompleted} />
       </div>
     </div>
   );

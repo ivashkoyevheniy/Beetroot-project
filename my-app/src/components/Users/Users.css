@@ -1,7 +1,140 @@
-table{
-    width: 100%;
+table {
+  width: 100%;
 }
 
-table tr.table-item{
-    margin-bottom: 0;
+table tr.table-item {
+  margin-bottom: 0;
+}
+
+.table-item--users {
+    padding: 0;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0 5px;
+}
+
+.table-title--users {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.users-sort {
+  display: flex;
+  justify-content: flex-end;
+  height: 48px;
+  border: 1px solid #8492af;
+  border-radius: 24px;
+  padding: 14px 22px;
+  font-size: 14px;
+  color: #8492af;
+  font-weight: 400;
+}
+.author-position {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 400;
+    color: #8492af;
+}
+
+.author-name {
+    font-size: 20px;
+    margin: 0;
+}
+
+.users-select {
+  outline: none;
+  background: none;
+  border: none;
+  color: #0e1a35;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.table-item--title {
+    border: none;
+    background: none;
+    height: 60px;
+    padding: 0;
+}
+
+.author-item {
+    display: flex;
+}
+
+.table-item th:nth-child(1) {
+    width: 30%;
+}
+.table-item th:nth-child(2) {
+    width: 28%;
+}
+.table-item th:nth-child(3) {
+    width: 28%;
+}
+.table-item th:nth-child(4) {
+    width: 28%;
+}
+.table-item th:nth-child(5) {
+    width: 10%;
+}
+
+.table-item--users {
+    border: none;
+}
+.table-item--users th {
+    border:1px solid #dadee7;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.author-data {
+    padding-left: 34px;
+    font-size: 20px;
+}
+.avatar-container--users {
+    width: 70px;
+    height: 70px;
+}
+
+.item-more--users {
+    height: 30% !important;
+}
+
+.users-more-container {
+    padding: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.table-item--title th {
+    padding-left: 35px;
+    color: #8492af;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.avatar-container--users .rounded-circle {
+    background-color: #00bf1b;
+    top: 10px;
+    right: -12px;
+    border: 3px solid #fff !important;
+}
+
+.users-online {
+    color: #00bf1b;
+}
+
+.users-offline {
+    color: #8492af;
+}
+
+.icon-container--users {
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
 }

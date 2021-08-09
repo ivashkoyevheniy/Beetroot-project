@@ -6,4 +6,5 @@ export * from "./AppHeader/AppHeader";
 export * from "./WorkflowTable/WorkflowTable";
 export * from "./HomeTable/HomeTable";
 export * from "./Layouts";
-export * from './Users/Users';
+export * from "./Users/Users";
+export * from "./StatisticsTable/StatisticsTable"

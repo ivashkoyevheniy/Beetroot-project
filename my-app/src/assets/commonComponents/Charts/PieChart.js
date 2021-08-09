@@ -37,6 +37,7 @@ export default class PieChart extends React.PureComponent {
           />
           <Animation />
         </Chart>
+        
       </Paper>
     );
   }

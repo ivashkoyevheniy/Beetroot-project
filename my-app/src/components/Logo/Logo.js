@@ -1,10 +1,11 @@
 import './Logo.css';
 import logo from './../../assets/img/logo.png';
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import { routes } from "../../utils/routes";
 
 export const Logo = () => {
     return (
-        <Link to='/' className='logo-container'>
+        <NavLink to={routes.home} className='logo-container'>
             <div className='logo-image-container'>
             <img
                 alt='logo'
@@ -13,6 +14,6 @@ export const Logo = () => {
             </img>
             </div>
             <span className='logo-title'>Mercury</span>
-        </Link>
+        </NavLink>
     );
 }

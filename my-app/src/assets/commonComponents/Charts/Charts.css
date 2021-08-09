@@ -14,16 +14,26 @@
 
 .MuiPaper-root.MuiPaper-elevation1.MuiPaper-rounded {
   box-shadow: none;
+  position: relative;
   border-radius: 0;
   border: 1px solid #d4d9e3;
   padding: 30px;
   box-sizing: border-box;
 }
-.Component-root-1 {
+.LineChart-chart-6 {
   height: 410px !important;
   padding: 0 !important;
 }
 
+.home-top-left-container .MuiPaper-root .Component-root-1,
+.home-top-right-container .MuiPaper-root .Component-root-1 {
+  height: 410px !important;
+}
+
 #center-center {
   margin-right: 40px;
+}
+
+.indicator--piechart {
+  left: -15%;
 }
