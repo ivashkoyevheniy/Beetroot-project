@@ -29,7 +29,7 @@ deleyTasks =  homePageTasks.filter(function(array) {
         <TableTitle name="Messages" quantity={readedMessages.length} />
         <TableBody type="messages" key={uuidv4()} data={homePageMessages} />
       </div>
-      <div className="table table-column">
+      <div className="table table-column table-column--activity">
         <TableTitle name="Activity" quantity={homePageActivity.length} />
         <TableBody type="activity" key={uuidv4()} data={homePageActivity} />
       </div>

@@ -15,7 +15,7 @@ export const TableItem = ({ data, type }) => {
           <div className="item-title">
             {title}
           </div>
-          <TableItemDescription description={description} inTime={inTime} title={title} />
+          <TableItemDescription description={description} isCompleted={isCompleted} inTime={inTime} title={title} />
         </div>
         <button className='item-more'>
           {iconCreator(moreIcon)}
